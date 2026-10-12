@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://crmh77h1dgowf"]
+
+[ext_resource type="Shader" uid="uid://c5sgkem3jwib7" path="res://scripts/shaders/balatro_bg.gdshader" id="1_om6sl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_anprf"]
+shader = ExtResource("1_om6sl")
+shader_parameter/spin_rotation_speed = 2.0
+shader_parameter/move_speed = 7.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.9876583, 0.75200903, 0.71905875, 1)
+shader_parameter/colour_2 = Color(0.8179, 0.6977227, 0.95294183, 1)
+shader_parameter/colour_3 = Color(0.035628475, 0.2572179, 0.3444253, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 740.0
+shader_parameter/is_rotating = false
+
+[node name="failure_bg" type="ColorRect" unique_id=90453807]
+material = SubResource("ShaderMaterial_anprf")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2

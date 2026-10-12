@@ -1,3 +1,4 @@
+[background scene="res://scenes/failure.tscn" fade="0.0" transition="Push Left"]
 agent: [tornado]Ouch... That wasn't it[/tornado]
 - Retry
 	[signal arg="Retry"]

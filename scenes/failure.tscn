@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://j0yhyx33iq3s"]
+
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_sf880"]
+[ext_resource type="PackedScene" uid="uid://crmh77h1dgowf" path="res://scenes/failure_bg.tscn" id="2_i57f3"]
+
+[node name="failure" type="Node" unique_id=1540319817]
+script = ExtResource("1_sf880")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
+
+[node name="failure_bg" parent="." unique_id=90453807 instance=ExtResource("2_i57f3")]

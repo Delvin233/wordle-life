@@ -77,7 +77,7 @@ func submit_guess() -> void:
 		await get_tree().create_timer(2.0).timeout
 		# queue_free()
 		set_process_unhandled_input(false)
-		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/bioimetrics_word.tscn")
+		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/privacy_word.tscn")
 
 		# if success == true:
 		# 	# get_tree().change_scene_to_file("res://scenes/words/combo_w.tscn")
@@ -102,7 +102,7 @@ func submit_guess() -> void:
 
 func on_dialogic_signal(choice: String)-> void:
 	if choice == "Retry":
-		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/privacy_word.tscn")
+		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/alerts_word.tscn")
 
 	elif choice == "Give_up":
 		get_tree().quit()
