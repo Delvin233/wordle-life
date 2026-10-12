@@ -16,6 +16,9 @@ var cur_col: int = 0
 
 func _ready() -> void:
 	generate_puzzle()
+	Dialogic.signal_event.connect(on_dialogic_signal)
+	Dialogic.start("biometrics")
+
 	pass
 
 
@@ -60,17 +63,21 @@ func delete_letter() -> void:
 
 func submit_guess() -> void:
 	if cur_col < words.length():
-		# Dialogic.start("fill_in_the_blank")
+		Dialogic.start("fill_in_the_blanks")
 		await get_tree().create_timer(2.0).timeout
-		# Dialogic.clear()
+		Dialogic.clear()
 		return
 
 	check_wordle_logic()
 	if cur_guess == words.to_upper():
 		prints("you win")
 		success = true
+		Dialogic.start("actions_complete")
+
+		await get_tree().create_timer(2.0).timeout
 		# queue_free()
 		set_process_unhandled_input(false)
+		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/credits.tscn")
 
 		# if success == true:
 		# 	# get_tree().change_scene_to_file("res://scenes/words/combo_w.tscn")
@@ -84,10 +91,21 @@ func submit_guess() -> void:
 	if cur_row >= max_attempts and success == false:
 		print("you lose")
 		set_process_unhandled_input(false)
+		Dialogic.start("failure")
+		# await get_tree().create_timer(4.0).timeout
+		# Dialogic.clear()
+
 
 		# if success == false:
 		# 	Dialogic.start("failure")
 		# return
+
+func on_dialogic_signal(choice: String)-> void:
+	if choice == "Retry":
+		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/privacy_word.tscn")
+
+	elif choice == "Give_up":
+		get_tree().quit()
 
 
 func type_letter(letter: String) -> void:

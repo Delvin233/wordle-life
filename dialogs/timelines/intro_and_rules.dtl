@@ -1,0 +1,9 @@
+agent: Aha! Seems youre here to for some cash
+agent: No worries, allow me to ask you a few questions about MoMo. Actually, I'd ask just 4 questions.
+agent: I can tell you need the money [shake]urgently[/shake], however a bit of awareness doesnt hurt
+agent: This is like any wordle game, all you need is to fill in with the right answers
+agent: A [color=green]Green[/color] Highlight is the right letter(s) in the right position
+agent: A [color=yellow]Yellow[/color] Highlight means the letter(s) is correct yet in the wrong position
+agent: A [color=purple]purple[/color] Highlight is the wrong letter(s) in the wrong position
+agent: [rainbow]Lets do this![/rainbow]
+jump pini/

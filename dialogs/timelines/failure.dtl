@@ -1,0 +1,5 @@
+agent: [tornado]Ouch... That wasn't it[/tornado]
+- Retry
+	[signal arg="Retry"]
+- Give_up
+	[signal arg="Give_up"]

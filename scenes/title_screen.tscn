@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cpa0u18mvfw4n" path="res://scenes/button.tscn" id="1_fgkus"]
 [ext_resource type="Theme" uid="uid://d0fampn6g6rda" path="res://scenes/themes/ui_themes_1.tres" id="1_sa3yf"]
+[ext_resource type="Script" uid="uid://dqvs610c3cf7u" path="res://scripts/buttons/quit.gd" id="3_s4lrb"]
 
 [node name="TitleScreen" type="Control" unique_id=1789528448]
 layout_mode = 3
@@ -50,3 +51,4 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "QUIT"
+script = ExtResource("3_s4lrb")
