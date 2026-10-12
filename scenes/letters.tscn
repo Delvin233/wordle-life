@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://8ut0r5cqxa01"]
+
+[ext_resource type="Script" uid="uid://bhd33letaiv7p" path="res://scripts/letters.gd" id="1_id4sl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1mko2"]
+bg_color = Color(0.31690443, 0.33633322, 0.7365014, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4629572, 0.61609155, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="letters" type="PanelContainer" unique_id=202741758]
+offset_right = 60.0
+offset_bottom = 60.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1mko2")
+script = ExtResource("1_id4sl")
+
+[node name="Label" type="Label" parent="." unique_id=1078849751]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1

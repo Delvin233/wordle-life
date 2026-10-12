@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bfi68t38w0jq2"]
+
+[ext_resource type="Script" uid="uid://cy1lh5qdud5p5" path="res://scripts/abare.gd" id="1_arqu5"]
+
+[node name="abareW" type="VBoxContainer" unique_id=348384478]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+script = ExtResource("1_arqu5")

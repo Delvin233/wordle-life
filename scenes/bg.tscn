@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://docatl7x23t3p"]
+
+[ext_resource type="PackedScene" uid="uid://bfi68t38w0jq2" path="res://scenes/words/abare_w.tscn" id="1_anprf"]
+[ext_resource type="Shader" uid="uid://c5sgkem3jwib7" path="res://scripts/balatro_bg.gdshader" id="1_dpp0m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_anprf"]
+shader = ExtResource("1_dpp0m")
+shader_parameter/spin_rotation_speed = 2.0
+shader_parameter/move_speed = 7.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0, 0, 0, 1)
+shader_parameter/colour_2 = Color(1, 1, 1, 1)
+shader_parameter/colour_3 = Color(0.101960786, 0.101960786, 1, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 740.0
+shader_parameter/is_rotating = false
+
+[node name="bg" type="ColorRect" unique_id=90453807]
+material = SubResource("ShaderMaterial_anprf")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1279979972]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="abareW" parent="CenterContainer" unique_id=348384478 instance=ExtResource("1_anprf")]
+layout_mode = 2
