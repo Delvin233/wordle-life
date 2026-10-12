@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ifp57u8iakjp"]
+
+[ext_resource type="PackedScene" uid="uid://cpa0u18mvfw4n" path="res://scenes/button.tscn" id="1_fgkus"]
+[ext_resource type="Theme" uid="uid://d0fampn6g6rda" path="res://scenes/themes/ui_themes_1.tres" id="1_sa3yf"]
+
+[node name="TitleScreen" type="Control" unique_id=1789528448]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_sa3yf")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=635916864]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1004890754]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="RichTextLabel" parent="PanelContainer/VBoxContainer" unique_id=1375623706]
+layout_mode = 2
+theme_type_variation = &"RichTextLabelTitle"
+bbcode_enabled = true
+text = "[wave]MoMo-Wordle"
+fit_content = true
+autowrap_mode = 0
+
+[node name="PlayButton" parent="PanelContainer/VBoxContainer" unique_id=1552294142 instance=ExtResource("1_fgkus")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Options" parent="PanelContainer/VBoxContainer" unique_id=1358235558 instance=ExtResource("1_fgkus")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "OPTIONS "
+
+[node name="Quit" parent="PanelContainer/VBoxContainer" unique_id=1253476314 instance=ExtResource("1_fgkus")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "QUIT"

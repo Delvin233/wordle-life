@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://bhd33letaiv7p" path="res://scripts/letters.gd" id="1_id4sl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1mko2"]
-bg_color = Color(0.31690443, 0.33633322, 0.7365014, 1)
+bg_color = Color(0.19307446, 0.20292261, 0.029607078, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
-border_color = Color(0.4629572, 0.61609155, 1, 1)
+border_color = Color(0.9515882, 0.97319096, 0.77780235, 1)
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5

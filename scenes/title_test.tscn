@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c4d0rtoq71ffa"]
+
+[ext_resource type="PackedScene" uid="uid://ifp57u8iakjp" path="res://scenes/title_screen.tscn" id="1_kvuax"]
+[ext_resource type="Shader" uid="uid://c5sgkem3jwib7" path="res://scripts/shaders/balatro_bg.gdshader" id="1_xsq1n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xsq1n"]
+shader = ExtResource("1_xsq1n")
+shader_parameter/spin_rotation_speed = 2.0
+shader_parameter/move_speed = 7.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.871, 0.267, 0.231, 1)
+shader_parameter/colour_2 = Color(0, 0.42, 0.706, 1)
+shader_parameter/colour_3 = Color(0.086, 0.137, 0.145, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 740.0
+shader_parameter/is_rotating = false
+
+[node name="title_test" type="ColorRect" unique_id=2019903722]
+material = SubResource("ShaderMaterial_xsq1n")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleScreen" parent="." unique_id=1789528448 instance=ExtResource("1_kvuax")]
+layout_mode = 1
