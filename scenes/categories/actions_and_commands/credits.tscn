@@ -2,6 +2,7 @@
 
 [ext_resource type="Shader" uid="uid://c5sgkem3jwib7" path="res://scripts/shaders/balatro_bg.gdshader" id="1_nrnvk"]
 [ext_resource type="Theme" uid="uid://d0fampn6g6rda" path="res://scenes/themes/ui_themes_1.tres" id="2_oe6ya"]
+[ext_resource type="Script" uid="uid://dqvs610c3cf7u" path="res://scripts/buttons/quit.gd" id="3_oe6ya"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_anprf"]
 shader = ExtResource("1_nrnvk")
@@ -45,3 +46,21 @@ theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 text = "[wave]Thank you so much for playing and remember to keep the words you just found your daily mantra! Happy Momo!"
 fit_content = true
+
+[node name="Button" type="Button" parent="." unique_id=673291206]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -59.0
+offset_top = -58.0
+offset_right = 53.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_oe6ya")
+theme_type_variation = &"FlatButton"
+text = "QUIT"
+script = ExtResource("3_oe6ya")
