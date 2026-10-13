@@ -88,7 +88,6 @@ func submit_guess() -> void:
 	cur_col = 0
 	cur_guess = ""
 
-	# TODO: fix the choice stuff
 	if cur_row >= max_attempts and success == false:
 		print("you lose")
 		set_process_unhandled_input(false)

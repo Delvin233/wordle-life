@@ -4,7 +4,7 @@ extends VBoxContainer
 @export var max_attempts: int = 6
 
 var success = false
-var words: String = "alerts"
+var words: String = "alert"
 # checking letters
 var cur_guess: String = ""
 var cur_row: int = 0
@@ -102,7 +102,7 @@ func submit_guess() -> void:
 
 func on_dialogic_signal(choice: String)-> void:
 	if choice == "Retry":
-		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/alerts_word.tscn")
+		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/alert_word.tscn")
 
 	elif choice == "Give_up":
 		get_tree().quit()

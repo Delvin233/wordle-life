@@ -102,7 +102,7 @@ func submit_guess() -> void:
 
 func on_dialogic_signal(choice: String)-> void:
 	if choice == "Retry":
-		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/privacy_word.tscn")
+		get_tree().change_scene_to_file("res://scenes/categories/actions_and_commands/biometrics_word.tscn")
 
 	elif choice == "Give_up":
 		get_tree().quit()
